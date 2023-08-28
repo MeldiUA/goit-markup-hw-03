@@ -53,7 +53,7 @@ address {
 }
 
 .container {
-  width: 1158pxpx;
+  width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -145,9 +145,6 @@ address {
 .main-section {
   background: #2e2f42;
   flex-shrink: 0;
-}
-
-.main-section-container {
   padding-bottom: 188px;
   padding-top: 188px;
 }
@@ -312,6 +309,7 @@ address {
   text-align: left;
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .title-item-portfolio {
