@@ -8,8 +8,25 @@ body {
 }
 
 ul,
-li {
+ol {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 a {
@@ -20,8 +37,45 @@ address {
   font-style: normal;
 }
 
-/* Header */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*<=========== Header ======================>*/
+
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
+  display: flex;
+  align-items: center;
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -29,10 +83,17 @@ address {
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .text-studio-logo {
   color: #2e2f42;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
 }
 
 .navigation-item:hover,
@@ -41,11 +102,19 @@ address {
 }
 
 .navigation-item {
+  display: flex;
+  align-items: center;
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
+}
+
+.adress-list {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
 }
 
 .adress-item:hover,
@@ -54,6 +123,8 @@ address {
 }
 
 .adress-item {
+  display: flex;
+  align-items: center;
   color: #434455;
   font-size: 16px;
   font-weight: 400;
@@ -61,11 +132,17 @@ address {
   letter-spacing: 0.02em;
 }
 
-/* Main section */
+/*<===================== Main section ===============>*/
 
 .main-section {
   background: #2e2f42;
   flex-shrink: 0;
+}
+
+.main-section-container {
+  text-align: center;
+  padding-bottom: 188px;
+  padding-top: 188px;
 }
 
 .title-main {
@@ -75,6 +152,10 @@ address {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin-bottom: 48px;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn-order-service {
@@ -87,6 +168,11 @@ address {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.04em;
   color: #ffffff;
+  width: 169px;
+  height: 56px;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 4px;
 }
 
 .btn-order-service:hover,
@@ -94,11 +180,7 @@ address {
   background-color: #404bbf;
 }
 
-/* Section Chracteristics */
-
-.title-chracteristics-section {
-  color: transparent;
-}
+/*<============= Section Chracteristics ===========>*/
 
 .title-chracteristics {
   color: #2e2f42;
@@ -106,6 +188,18 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.chracteristics-list-container {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  column-gap: 24px;
+}
+
+.chracteristics-list-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .description-characteristic {
@@ -123,6 +217,11 @@ address {
   background-color: #f4f4fd;
 }
 
+.our-team-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .title-our-team {
   color: #2e2f42;
   text-align: center;
@@ -133,8 +232,20 @@ address {
   text-transform: capitalize;
 }
 
+.our-team-list {
+  display: flex;
+  column-gap: 24px;
+}
+
 .item-our-team-list {
   background-color: #ffffff;
+  width: calc((100% - 96px) / 4);
+}
+
+.description-photo-member {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .name-member-team {
@@ -143,6 +254,7 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .position-member {
@@ -153,34 +265,63 @@ address {
   letter-spacing: 0.02em;
 }
 
-/* Our portfolio section */
+/*<=============== Our portfolio section ===========>*/
+
+.our-portfolio-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  flex-wrap: wrap;
+}
+
 .title-our-portfolio {
+  text-align: center;
   color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.list-our-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+}
+
+.our-portfolio-item {
+  width: calc((100% - 72px) / 3);
+}
+
+.description-photo-portfolio {
+  text-align: left;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .title-item-portfolio {
   color: #2e2f42;
-  text-align: center;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .description-item-portdolio {
-  text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-/* Footer */
+/*<============== Footer ===================>*/
+
+.footer-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 
 .logo-footer {
   color: #4d5ae5;
@@ -206,4 +347,6 @@ address {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
+  margin-top: 18px;
 }
