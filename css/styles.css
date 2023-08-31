@@ -68,14 +68,14 @@ address {
 .page-header-container {
   display: flex;
   justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .page-navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .logo {
@@ -99,8 +99,6 @@ address {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .navigation-item:hover,
@@ -109,31 +107,23 @@ address {
 }
 
 .navigation-item {
-  display: flex;
-  align-items: center;
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
-.page-adress {
+/* .page-adress {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
+} */
 
 .adress-list {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .adress-item:hover,
@@ -142,8 +132,8 @@ address {
 }
 
 .adress-item {
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   color: #434455;
   font-size: 16px;
   font-weight: 400;
@@ -200,10 +190,10 @@ address {
 
 /*<============= Section Chracteristics ===========>*/
 
-.chracteristics-section {
+/* .chracteristics-section {
   padding-top: 120px;
   padding-bottom: 120px;
-}
+} */
 
 .title-chracteristics {
   color: #2e2f42;
