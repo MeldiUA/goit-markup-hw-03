@@ -56,7 +56,8 @@ address {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*<=========== Header ======================>*/
@@ -107,6 +108,7 @@ address {
 }
 
 .navigation-item {
+  display: block;
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
@@ -190,10 +192,10 @@ address {
 
 /*<============= Section Chracteristics ===========>*/
 
-/* .chracteristics-section {
+.chracteristics-section {
   padding-top: 120px;
   padding-bottom: 120px;
-} */
+}
 
 .title-chracteristics {
   color: #2e2f42;
@@ -206,8 +208,6 @@ address {
 
 .chracteristics-list-container {
   display: flex;
-  padding-top: 120px;
-  padding-bottom: 120px;
   gap: 24px;
 }
 
